@@ -1,8 +1,8 @@
 # batstuff
 
 Set up:
-1: Go to _example.bat
-2: Set variable values
+1. Go to _example.bat
+2. Set variable values
 
 Good to know:
 - Keep _main as it is, it's not meant to be altered (unless you want to add or change functionality)
