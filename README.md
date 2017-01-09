@@ -9,8 +9,7 @@ Good to know:
 - Set browser paths in _main-browser (ex C:\Program Files (x86)\Internet Explorer)
 
 Variable explanation:
-* proj = project name
-* trunk = path to VS-solution 
-* trunkExplorer = path to project in file explorer
-* trunkWeb = local web address (http://example.local etc)
-* projPort = port number. Not critical, but good to know sometimes
+* slnPath = path to VS-solution 
+* folderPath = path to project in file explorer
+* webAddress = local web address (http://example.local etc)
+* port = port number. Not critical, but good to know sometimes
