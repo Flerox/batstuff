@@ -1,7 +1,7 @@
 color a
 ::START
-echo %proj%
-echo Port %projPort%
+echo %projName%
+echo Port %port%
 
 :mainmenu
 echo.
@@ -36,57 +36,57 @@ if %mm% == 0 exit
 :quickstart
 echo.
 echo ## Quick start ##
-start "" %trunk%
-echo Running %proj% Visual Studio Solution
-explorer %trunkExplorer%
+start "" %slnPath%
+echo Running %projName% Visual Studio Solution (trunk)
+explorer %folderPath%
 cd %chromePath%
-start chrome.exe %trunkWeb%
-echo Running %proj% in Chrome
+start chrome.exe %webAddress%
+echo Running %projName% in Chrome
 goto localTimeTracker
 
 :vs
 echo.
 echo ## Visual Studio ##
-start "" %trunk%
-echo Running %proj% Visual Studio Solution
+start "" %slnPath%
+echo Running %projName% Visual Studio Solution (trunk)
 goto mainmenu
 
 :chrome
 echo.
 echo ## Chrome ##
 cd %chromePath%
-start chrome.exe %trunkWeb%
-echo Running %proj% in Chrome
+start chrome.exe %webAddress%
+echo Running %projName% in Chrome
 goto mainmenu
 
 :firefox
 echo.
 echo ## Firefox ##
 cd %firefoxPath%
-start firefox.exe %trunkWeb%
-echo Running %proj% in Firefox
+start firefox.exe %webAddress%
+echo Running %projName% in Firefox
 goto mainmenu
 
 :ie
 echo.
 echo ## Internet Explorer ##
 cd %iePath%
-start iexplore %trunkWeb%
-echo Running %proj% in IE
+start iexplore %webAddress%
+echo Running %projName% in IE
 goto mainmenu
 
 :edge
 echo.
 echo ## Microsoft Edge ##
-start microsoft-edge:%trunkWeb%
-echo Running %proj% in Edge
+start microsoft-edge:%webAddress%
+echo Running %projName% in Edge
 goto mainmenu
 
 :folder
 echo.
 echo ## File explorer ##
-explorer %trunkExplorer%
-echo Opening %proj% in file explorer
+explorer %folderPath%
+echo Opening %projName% in file explorer
 goto mainmenu
 
 :timetracker
