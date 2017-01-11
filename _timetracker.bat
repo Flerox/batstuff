@@ -1,5 +1,5 @@
 @echo off
-chcp 1252
+chcp 1252 > nul
 color 0b
 :time
 set date = %date%
@@ -26,5 +26,5 @@ echo %time%
 ) >> "_timelog.txt"
 echo.
 set /P tm=End session [Y/N]?
-if /I "%tm%" EQU "N" echo Fika is over. && goto localTimeTracker
-if /I "%tm%" EQU "Y" goto mainmenu
+if /I "%tm%" EQU "N" echo Fika is over. && goto time
+if /I "%tm%" EQU "Y" goto exit

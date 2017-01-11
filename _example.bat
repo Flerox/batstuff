@@ -1,5 +1,5 @@
 @echo off
-chcp 1252
+chcp 1252 > nul
 cls 
 
 ::basic setup
