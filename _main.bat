@@ -114,17 +114,24 @@ if /I "%tm%" EQU "Y" goto mainmenu
 :funtajm
 echo.
 echo ## Funny joke ##
+echo.
+timeout /t 1 /nobreak > nul
 echo What's Whitney Houston's favorite type of coordination?
+timeout /t 3 /nobreak > nul
 echo.
 pause > nul | set/p=Press key to get joke (hihi). . . & echo(
 echo.
 echo.
 echo.
 echo HAAAAAAAAAAAAAAAAAND EEEEEEEEEEEEEEEEEYEEEEEEEEE!
+timeout /t 3 /nobreak > nul
 echo.
 echo.
 echo.
 echo hahahahahahahahhahah! 
+timeout /t 2 /nobreak > nul
+echo bwahahahahaahahhahahahahahahahahhahah! 
 echo.
+timeout /t 1 /nobreak > nul
 pause > nul | set/p=That was so punny! Press key if you can't take it anymore. . . & echo(
 goto mainmenu
