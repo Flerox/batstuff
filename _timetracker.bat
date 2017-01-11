@@ -22,9 +22,12 @@ pause > nul | set/p=Press any key to pause session. . . & echo(
 echo.
 echo ENDTIME
 echo %time%
-@(echo End: %time%  && echo.
+@(echo End: %time%
 ) >> "_timelog.txt"
 echo.
+set /P info=Session info (leave EMPTY for previous message): 
+@(echo Message: %info%  && echo.
+) >> "_timelog.txt"
 set /P tm=End session [Y/N]?
 if /I "%tm%" EQU "N" echo Fika is over. && goto time
 if /I "%tm%" EQU "Y" goto exit
