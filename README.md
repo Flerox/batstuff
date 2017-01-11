@@ -7,6 +7,7 @@ Set up:
 Good to know:
 - Keep _main as it is, it's not meant to be altered (unless you want to add or change functionality)
 - Set browser paths in _main-browser (ex C:\Program Files (x86)\Internet Explorer)
+- The timetracker will automatically generate a log file
 
 Variable explanation:
 * slnPath = path to VS-solution 
