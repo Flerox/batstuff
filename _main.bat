@@ -108,22 +108,24 @@ for /f %%i in ('findstr %findtext% %findfile%') do (
 )
 if %COUNT% LSS 1 (
 echo %date% >> "_timelog.txt"
+echo %date%
 )
 echo.
-echo STARTTIME
-echo %time%
+echo START: %time%
 echo Start: %time% >> "_timelog.txt"
 echo.
-pause > nul | set/p=Press any key to pause session. . . & echo(
+timeout /t 2 /nobreak > nul
+pause > nul | set/p=Press any key to end session... & echo(
 echo.
-echo ENDTIME
-echo %time%
+echo END: %time%
 @(echo End: %time%
 ) >> "_timelog.txt"
 echo.
+timeout /t 1 /nobreak > nul
 set /P info=Session info (leave EMPTY for previous message): 
 @(echo Message: %info%  && echo.
 ) >> "_timelog.txt"
+echo.
 echo.
 set /P tm=End session [Y/N]?
 if /I "%tm%" EQU "N" echo Fika is over. && goto localTimeTracker
