@@ -6,19 +6,22 @@ echo Port %port%
 :mainmenu
 echo.
 echo ...............................................
-echo Main menu
+echo  Main menu
 echo ...............................................
 echo.
-echo 1 - QUICK START
-echo 2 - Visual Studio
-echo 3 - Chrome
-echo 4 - Firefox
-echo 5 - IE
-echo 6 - Edge
-echo 7 - File explorer
-echo 8 - Time tracking
-echo 9 - Joke
-echo 0 - EXIT
+echo  .........................
+echo [                         ]
+echo [    1 - QUICK START      ]
+echo [    2 - Visual Studio    ]
+echo [    3 - Chrome           ]
+echo [    4 - Firefox          ]
+echo [    5 - IE               ]
+echo [    6 - Edge             ]
+echo [    7 - File explorer    ]
+echo [    8 - Time tracking    ]
+echo [    9 - Joke             ]
+echo [    0 - QUIT             ]
+echo [.........................]
 echo.
 set /P mm=Select number from menu and press ENTER: 
 if %mm% == 1 goto quickstart
